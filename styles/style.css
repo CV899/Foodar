@@ -4,6 +4,37 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-image: url(../pictures/OG1FLx.jpg);
   background-size: cover;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0;
+  background-color: #E7E3C7;
+  flex-shrink: 0;
+  box-shadow: 0 -3px 10px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+hr.rounded {
+  border-top: 5px solid #595858;
+  border-radius: 5px;
+  width: 45%;
 }
