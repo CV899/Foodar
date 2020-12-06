@@ -1,5 +1,6 @@
 html, body {
-  height: 100%;
+  min-height: 100vh;
+  width: 100%;
   margin: 0;
 }
 
@@ -8,17 +9,51 @@ body {
   flex-direction: column;
   background-image: url(../pictures/OG1FLx.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 footer {
   height: auto;
-  width: 100%;
   padding: 0.5em 1em;
   margin: 0;
-  background-color: #E7E3C7;
+  background-color: #d6baaf;
   flex-shrink: 0;
   box-shadow: 0 -3px 10px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+hr.rounded {
+  border-top: 5px solid #595858;
+  border-radius: 5px;
+  width: 25%;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: black;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 .content {
@@ -26,15 +61,68 @@ footer {
 }
 
 .footer-table {
-  width: 100%;
+  width:100%;
   margin: 0;
   padding: 0;
+  text-align: left;
+}
+
+.footer-quote {
+  text-align:right;
+}
+
+.footer-center {
   text-align: center;
 }
 
 
-hr.rounded {
-  border-top: 5px solid #595858;
-  border-radius: 5px;
-  width: 45%;
+.footer-table td {
+  padding: 0.4em;
+  width: 33%;
+}
+
+.ad-banner {
+  width: 468px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  box-shadow: 10px -3px 10px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid;
+}
+
+.recipe {
+  background-image: url('../pictures/food.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px black;
+  justify-content: center;
+}
+
+.find-driver {
+  color: black;
+  height: 50vh;
+  padding: 1% 5%;
+  box-shadow: 10px -3px 10px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px black;
+}
+
+.driver-header {
+  font-size: 3em;
+  margin-block-end: 0.5em;
+}
+
+.driver-subtext {
+  font-size: 1.5em;
+  margin-block-start: 0.5em;
 }
